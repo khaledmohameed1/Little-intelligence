@@ -5,13 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ذكاء صغير</title>
-  <link rel="stylesheet" href="src/output.css">
+  <!-- <link rel="stylesheet" href="src/output.css"> -->
+
   <!-- font google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900;1000&family=Jost:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      direction: rtl !important;
+      font-family: "Cairo", sans-serif !important;
+      /* font-family: "Jost", sans-serif; */
+    }
+  </style>
 </head>
 
 <body>
@@ -68,7 +78,8 @@
   <!-- end navber -->
 
   <!-- start bg-cover -->
-  <section class="bg-center h-[80vh] bg-no-repeat  bg-[url('/image/bg-cover.png')] bg-gray-700 bg-blend-multiply">
+  <section style="background-image: url('image/bg-cover.png')" class=" bg-center h-[80vh] bg-no-repeat bg-gray-700
+    bg-blend-multiply">
     <div class="relative top-[50%] -translate-y-2/4  m-0   text-center lg:py-56">
       <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">عن المنصه
       </h1>
@@ -567,7 +578,7 @@
   <!-- end footer -->
 
   <script>
-    const words = [ "منصة ذكاء صغير", "ترحب بكم", "ابداء الان التعلم بستخدام الذكاء لصناعى" ];
+    const words = [ "منصة ذكاء صغير", "ترحب بكم", "ابداء الان التعلم بستخدام الذكاء الصناعى" ];
     let i = 0;
     let j = 0;
     let currentWord = "";
