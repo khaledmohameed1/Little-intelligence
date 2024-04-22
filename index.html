@@ -5,11 +5,557 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ذكاء صغير</title>
+  <!-- <link rel="stylesheet" href="src/output.css"> -->
+
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900;1000&family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      direction: rtl !important;
+      font-family: "Cairo", sans-serif !important;
+      /* font-family: "Jost", sans-serif; */
+    }
+  </style>
 </head>
 
 <body>
-  <div class="bg-black text-white text-3xl"><a href="signIn.html">login</a></div>
+  <!-- start navber  -->
+  <nav class="bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="image/logo.png" class="h-16 w-48" alt="Advanced Language Center">
+
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+          <li class="md:ml-8">
+            <a href="index.html"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
+              aria-current="page"> الرئسيه </a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">من
+              نحن</a>
+          </li>
+          <li>
+            <a href="courses.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">المنهج</a>
+          </li>
+          <li>
+            <a href="teacher.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">اتصل
+              بنا</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">التعلم
+              بذكاء الصناعى</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navber -->
+
+  <!-- start bg-cover -->
+  <section class="bg-center h-[80vh] bg-no-repeat  bg-[url('/image/bg-cover.png')] bg-gray-700 bg-blend-multiply">
+    <div class="relative top-[50%] -translate-y-2/4  m-0   text-center lg:py-56">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">عن المنصه
+      </h1>
+      <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+        "ذكاء صغير" هي منصة تعليمية تستخدم التقنيات الذكاء الاصطناعي لتقديم تجارب تعليمية مخصصة للأطفال. توفر المنصة
+        أنشطة وألعاب تعليمية تعزز مهارات القراءة، الكتابة، الرياضيات، والعلوم، مع توجيهات فردية وملاحظات فورية لتحفيز
+        التعلم وتطوير القدرات.
+      </p>
+      <div class="flex flex-col px-4 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <a href="#"
+          class="inline-flex  justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 ">
+          عرض المزيد
+
+          <svg aria-hidden="true" class="mr-3  w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <!-- end bg-cover -->
+  <!-- start about -->
+  <div class="relative overflow-hidden pt-16 pb-32 space-y-24">
+    <div class="relative  container mx-auto ">
+      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
+        <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
+
+          <div>
+            <div>
+              <span class="flex h-12 w-14 items-center justify-start rounded-xl text-[#0E33CB]">
+                من نحن
+              </span>
+            </div>
+
+            <div class="mt-6">
+              <h2 class="text-3xl font-bold tracking-tight text-[#121D50]">
+                تمكين الأطفال من خلال تجارب تعليمية مبتكرة
+              </h2>
+              <p class="mt-4 text-lg text-[#5C6C7B]">
+                منصة "ذكاء صغير" هي مبادرة تعليمية مبتكرة تمزج بين الذكاء الاصطناعي والتعليم التفاعلي لدعم تطور الأطفال
+                وتعزيز مهاراتهم منذ الصغر. نحن فريق مكرس لإيجاد الطرق الأكثر فاعلية لتعليم الأطفال وتحفيز تفكيرهم
+                وابتكارهم.
+              </p>
+              <div class="mt-6">
+                <a class="inline-flex rounded-lg bg-blue-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700"
+                  href="/about.html">
+                  عرض المزيد
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class=" px-4 mt-8">
+          <img loading="lazy" width="" height="" class=" w-[100%] rounded-xl shadow-2xl h-[450px]"
+            style="color:transparent" src="image/about.png">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end about -->
+
+  <!-- start Personal experiences -->
+  <section id="features" class=" px-4 space-y-6 bg-slate-50 py-8 md:py-12 lg:py-20">
+
+    <div class=" container mx-auto  flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+
+      <h2 class="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">الاراء عن المنصه</h2>
+
+      <p class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+        نقدم في هذا السكشن آراء حقيقية من المستخدمين حول منصة "ذكاء صغير". توفر هذه الآراء نظرة شاملة حول تأثير المنصة
+        على تطور وتعلم الأطفال، مما يساعد الآباء والمستخدمين الآخرين على فهم فعالية المنصة وقيمتها.
+      </p>
+
+    </div>
+
+    <div class="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3 ">
+
+      <div
+        class="relative text-center overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
+        <div class="flex  flex-col justify-between rounded-md p-6">
+          <div class=" flex justify-center">
+            <img class="w-12 h-12 mr-4 rounded-full" src="image/one.jpg" alt="Jane Doe">
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="font-bold">ليلى محمد</h3>
+            <div class="flex items-center justify-center space-x-2 mt-4">
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+            </div>
+            <p class="text-sm text-muted-foreground">أنا ممتنة لوجود منصة مثل 'ذكاء صغير'، فقد ساعدت ابني بشكل كبير في
+              تطوير مهاراته اللغوية والرياضية بطريقة ممتعة وتفاعلية.</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="relative text-center overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
+        <div class="flex  flex-col justify-between rounded-md p-6">
+          <div class=" flex justify-center">
+            <img class="w-12 h-12 mr-4 rounded-full" src="image/two.jpeg" alt="Jane Doe">
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="font-bold">عبد الرحمن علي</h3>
+            <div class="flex items-center justify-center space-x-2 mt-4">
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+            </div>
+            <p class="text-sm text-muted-foreground">أطفالي يستمتعون بشكل كبير بالألعاب والأنشطة على منصة 'ذكاء صغير'،
+              وألاحظ تحسنًا واضحًا في قدراتهم منذ استخدامهم لها.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative text-center overflow-hidden rounded-lg border bg-white select-none hover:shadow hover:shadow-teal-200 p-2">
+        <div class="flex  flex-col justify-between rounded-md p-6">
+          <div class=" flex justify-center">
+            <img class="w-12 h-12 mr-4 rounded-full" src="image/three.jpg" alt="Jane Doe">
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="font-bold">إيمان حسام</h3>
+            <div class="flex items-center justify-center space-x-2 mt-4">
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg class="text-yellow-500 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor" stroke="currentColor">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+            </div>
+            <p class="text-sm text-muted-foreground">بصراحة، المنصة دي وفّرت علينا وقت كتير، لأنها بتساعد الأولاد
+              يتعلموا في أي وقت ومن غير ما نشيل هم الحصص الخصوصية.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+  <!--End Personal experiences  -->
+  <!-- box -->
+  <!-- <div
+    class="px-5 grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3 lg:max-w-[80rem] lg:grid-cols-4  mt-8  container mx-auto">
+
+    <div class="  overflow-hidden bg-white rounded-lg shadow-md">
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="image/one.png" alt="Image">
+        <div class="absolute top-0 right-0">
+          <div class="w-32 h-8 absolute top-4 -right-8">
+            <div class="h-full w-full bg-red-600 text-white text-center leading-8 font-semibold transform rotate-45">
+              SALE</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+
+        <div class="p-4 absolute right-0 top-[-34px] bg-white mr-3 rounded-lg	 shadow-inner	drop-shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-[#f00] line-through decoration-[#f00]">$350</h3>
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Product Sale</h3>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum
+            auctor felis, vel consequat odio ullamcorper eu.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class=" bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <a href="pageCoure.html">Buy now</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="  overflow-hidden bg-white rounded-lg shadow-md">
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="image/twoo.png" alt="Image">
+        <div class="absolute top-0 right-0">
+          <div class="w-32 h-8 absolute top-4 -right-8">
+            <div class="h-full w-full bg-red-600 text-white text-center leading-8 font-semibold transform rotate-45">
+              SALE</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+
+        <div class="p-4 absolute right-0 top-[-34px] bg-white mr-3 rounded-lg	 shadow-inner	drop-shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-[#f00] line-through decoration-[#f00]">$350</h3>
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Product Sale</h3>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum
+            auctor felis, vel consequat odio ullamcorper eu.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class=" bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Primary Button
+        </button>
+      </div>
+    </div>
+    <div class="  overflow-hidden bg-white rounded-lg shadow-md">
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="image/threee.png" alt="Image">
+        <div class="absolute top-0 right-0">
+          <div class="w-32 h-8 absolute top-4 -right-8">
+            <div class="h-full w-full bg-red-600 text-white text-center leading-8 font-semibold transform rotate-45">
+              SALE</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+
+        <div class="p-4 absolute right-0 top-[-34px] bg-white mr-3 rounded-lg	 shadow-inner	drop-shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-[#f00] line-through decoration-[#f00]">$350</h3>
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Product Sale</h3>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum
+            auctor felis, vel consequat odio ullamcorper eu.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class=" bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Primary Button
+        </button>
+      </div>
+    </div>
+
+    <div class="  overflow-hidden bg-white rounded-lg shadow-md">
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="image/fourr.png" alt="Image">
+        <div class="absolute top-0 right-0">
+          <div class="w-32 h-8 absolute top-4 -right-8">
+            <div class="h-full w-full bg-red-600 text-white text-center leading-8 font-semibold transform rotate-45">
+              SALE</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+
+        <div class="p-4 absolute right-0 top-[-34px] bg-white mr-3 rounded-lg	 shadow-inner	drop-shadow-lg">
+          <h3 class="text-xl font-semibold mb-2 text-[#f00] line-through decoration-[#f00]">$350</h3>
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">Product Sale</h3>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum
+            auctor felis, vel consequat odio ullamcorper eu.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class=" bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Primary Button
+        </button>
+      </div>
+    </div>
+
+
+  </div> -->
+  <!-- box -->
+
+  <!-- start Connect us -->
+  <section class="text-gray-600 body-font relative">
+    <div class="container px-5 py-24 mx-auto">
+      <div class=" container mx-auto text-black  flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+
+        <h2 class="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl"> اتصل بنا الان</h2>
+
+        <p class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+          نقدم في هذا السكشن آراء حقيقية من المستخدمين حول منصة "ذكاء صغير". توفر هذه الآراء نظرة شاملة حول تأثير المنصة
+          على تطور وتعلم الأطفال، مما يساعد الآباء والمستخدمين الآخرين على فهم فعالية المنصة وقيمتها.
+        </p>
+
+      </div>
+      <form class="mt-4" action="https://fabform.io/f/{form-id}" method="post">
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600">الاسم الكامل</label>
+                <input type="text" id="name" name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:blue-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600">البريد الالكترونى</label>
+                <input type="email" id="email" name="email"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600">الرساله</label>
+                <textarea id="message" name="message"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button
+                class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Send
+              </button>
+            </div>
+            <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+
+              <p class="leading-normal my-5">المحله الكبرى
+                <br>شارع البحر بجوار شركة ناس
+              </p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </form>
+  </section>
+  <!-- end Connect us -->
+
+  <!-- start footer -->
+  <footer class="p-4 bg-[#F8F9FA] md:p-8 lg:p-10 ">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="#" class=" flex justify-center items-center  ">
+        <img src="image/logo.png" class="h-20 w-48" alt="Advanced Language Center">
+
+      </a>
+      <p class="max-w-[85%] md:max-w-[60%] m-auto leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+        The product can personalize user experiences by understanding individual preferences and tailoring
+        recommendations or content based on user behavior and historical data.
+      </p>
+      <ul class="flex justify-center items-center gap-4 p-4 md:p-0 mt-4 mb-5 font-medium">
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">الصفحة الرئسيه</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">من نحن</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">المنهج</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">اتصل بنا</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">التعلم بذكاء الصناعى</a>
+        </li>
+      </ul>
+
+      <span class="text-sm text-gray-500 sm:text-center mt-5 ">© 2023-2024 <a href="#" class="hover:underline">ذكاء
+          صغير</a>.
+        جميع الحقوق محفوظه</span>
+    </div>
+  </footer>
+  <!-- end footer -->
 </body>
 
 </html>
