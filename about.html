@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ذكاء صغير</title>
+  <!-- <link rel="stylesheet" href="src/output.css"> -->
+
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900;1000&family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      direction: rtl !important;
+      font-family: "Cairo", sans-serif !important;
+      /* font-family: "Jost", sans-serif; */
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- start navber  -->
+  <nav class="bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="image/logo.png" class="h-16 w-48" alt="Advanced Language Center">
+
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+        <button data-collapse-toggle="navbar-sticky" type="button" id="hamburger"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center toggle justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+          <li class="md:ml-8">
+            <a href="index.html" class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0
+              " aria-current="page"> الرئسيه </a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0  ">من
+              نحن</a>
+          </li>
+          <li>
+            <a href="courses.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">المنهج</a>
+          </li>
+          <li>
+            <a href="teacher.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">التعلم
+              بذكاء الصناعى</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">اتصل
+              بنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navber -->
+
+  <!-- start bg-cover -->
+  <section style="background-image: url('image/bg-cover.png')" class=" bg-center h-[80vh] bg-no-repeat bg-gray-700
+    bg-blend-multiply">
+    <div class="relative top-[50%] -translate-y-2/4  m-0   text-center lg:py-56">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">من نحن
+      </h1>
+      <p class="mb-8 text-lg md:w-[70%] px-5 mx-auto font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+
+        "ذكاء صغير" هي منصة تعليمية متخصصة في تقديم تجربة تعلم ممتعة ومبتكرة للأطفال. نهدف إلى تمكين الأطفال من اكتشاف
+        وتطوير قدراتهم بطريقة تفاعلية وشيقة، وذلك من خلال محتوى تعليمي شامل يغطي مختلف المجالات.
+      </p>
+
+    </div>
+  </section>
+  <!-- end bg-cover -->
+  <!-- start about -->
+  <div class="relative overflow-hidden pt-16 pb-32 space-y-24">
+    <div class="relative  container mx-auto ">
+      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
+        <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
+
+          <div>
+            <div>
+              <span class="flex h-12 w-14 items-center justify-start rounded-xl text-[#0E33CB]">
+                من نحن
+              </span>
+            </div>
+
+            <div class="mt-6">
+              <h2 class="text-3xl font-bold tracking-tight text-[#121D50]">
+                تمكين الأطفال من خلال تجارب تعليمية مبتكرة
+              </h2>
+              <p class="mt-4 text-lg text-[#5C6C7B]">
+                منصة "ذكاء صغير" هي مبادرة تعليمية مبتكرة تمزج بين الذكاء الاصطناعي والتعليم التفاعلي لدعم تطور الأطفال
+                وتعزيز مهاراتهم منذ الصغر. نحن فريق مكرس لإيجاد الطرق الأكثر فاعلية لتعليم الأطفال وتحفيز تفكيرهم
+                وابتكارهم.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class=" px-4 mt-8">
+          <img loading="lazy" width="" height="" class=" w-[100%] rounded-xl shadow-2xl h-[450px]"
+            style="color:transparent" src="image/about.png">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end about -->
+  <div class=" container w-full h-1 mx-auto mt-8 ">
+    <div class=" xl:mx-[160px] border-dashed border-2 border-[#5C6C7B]"></div>
+  </div>
+
+  <div class="bg-gray-100  p-4">
+    <div class="container mx-auto pt-12 pb-20">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:mx-[160px]">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">الرؤية</h2>
+          <p class="text-gray-700">
+            تهدف منصة "ذكاء صغير" إلى أن تكون الرائدة في مجال التعليم الإلكتروني للأطفال، من خلال توفير تجربة تعليمية
+            شاملة وممتعة تعزز نموهم الشخصي والأكاديمي.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">المهمة</h2>
+          <p class="text-gray-700">
+            تسعى منصة "ذكاء صغير" لتقديم محتوى تعليمي متنوع ومبتكر ينمي مهارات الأطفال ويثري معرفتهم، وذلك من خلال تجربة
+            تعلم محفزة وممتعة تعتمد على أحدث التقنيات وأساليب التعليم الحديثة.
+          </p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-xl font-bold text-gray-800 mb-4">الهدف</h2>
+          <p class="text-gray-700">
+            منصة "ذكاء صغير" هو تمكين الأطفال من اكتشاف وتطوير قدراتهم بشكل مبتكر وتفاعلي، من خلال تقديم محتوى تعليمي
+            شيق وملهم يعزز نموهم العقلي والاجتماعي بشكل مستدام.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start work team -->
+  <section class="">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+      <div class="mx-auto pb-5 flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+
+        <h2 class="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">فريق المشروع </h2>
+
+        <p class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+          فريق مشروع "ذكاء صغير" متخصص في تصميم منصة تعليمية ممتعة وتفاعلية للأطفال. يجمع الفريق بين خبراء التعليم
+          وتطوير البرمجيات لتقديم تجربة تعليمية شيقة تعزز مهارات الأطفال وتنمي قدراتهم بطريقة مبتكرة وفعّالة.
+        </p>
+
+      </div>
+      <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+        <div data-aos="flip-left" class="text-center text-gray-400 md:-order-2">
+          <img class="mx-auto mb-4 w-36 h-36 rounded-lg"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar" />
+          <h3 class="mb-1 text-lg font-bold tracking-tight text-[#00072E]">
+            <a href="#">اسم الشخص</a>
+          </h3>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end work team -->
+
+  <!-- start footer -->
+  <footer class="p-4 bg-[#F8F9FA] md:p-8 lg:p-10 ">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="#" class=" flex justify-center items-center  ">
+        <img src="image/logo.png" class="h-20 w-48" alt="Advanced Language Center">
+
+      </a>
+      <p class="max-w-[85%] md:max-w-[60%] m-auto leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+        منصة "ذكاء صغير" يوفر روابط للموارد الإضافية ومعلومات الاتصال وسياسة الخصوصية، مما يسهل الوصول إلى المعلومات
+        الهامة للطلاب وأولياء الأمور. </p>
+      <ul class="flex justify-center items-center gap-4 p-4 md:p-0 mt-4 mb-5 font-medium">
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">الصفحة الرئسيه</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">من نحن</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">المنهج</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">اتصل بنا</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">التعلم بذكاء الصناعى</a>
+        </li>
+      </ul>
+
+      <span class="text-sm text-gray-500 sm:text-center mt-5 ">© 2023-2024 <a href="#" class="hover:underline">ذكاء
+          صغير</a>.
+        جميع الحقوق محفوظه</span>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <script>
+    document.getElementById("hamburger").onclick = function toggleMenu() {
+      console.log("dfs")
+      const navToggle = document.getElementsByClassName("toggle");
+      for (let i = 0; i < navToggle.length; i++) {
+        navToggle.item(i).classList.toggle("hidden");
+      }
+    };
+  </script>
+</body>
+
+</html>

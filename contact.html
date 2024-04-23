@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ذكاء صغير</title>
+  <!-- <link rel="stylesheet" href="src/output.css"> -->
+
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900;1000&family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      direction: rtl !important;
+      font-family: "Cairo", sans-serif !important;
+      /* font-family: "Jost", sans-serif; */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start navber  -->
+  <nav class="bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="image/logo.png" class="h-16 w-48" alt="Advanced Language Center">
+
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+        <button data-collapse-toggle="navbar-sticky" type="button" id="hamburger"
+          class="inline-flex  items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center toggle justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+          <li class="md:ml-8">
+            <a href="index.html"
+              class="block py-2 px-3 text-gray-900  rounded md:bg-transparent md:text-blue-700 md:p-0 "
+              aria-current="page"> الرئسيه </a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">من
+              نحن</a>
+          </li>
+          <li>
+            <a href="courses.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">المنهج</a>
+          </li>
+          <li>
+            <a href="teacher.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">التعلم
+              بذكاء الصناعى</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="block py-2 px-3 text-white rounded bg-blue-700 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">اتصل
+              بنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navber -->
+
+  <!-- start bg-cover -->
+  <section style="background-image: url('image/bg-cover.png')" class=" bg-center h-[80vh] bg-no-repeat bg-gray-700
+    bg-blend-multiply">
+    <div class="relative top-[50%] -translate-y-2/4  m-0   text-center lg:py-56">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">تواصل
+        معانا
+      </h1>
+      <p class="mb-8 text-lg md:w-[70%] px-5 mx-auto font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+        يعتبر هذا القسم قناة مهمة للتفاعل وتبادل المعلومات بين مستخدمي المنصة وفريق الدعم. نحن هنا لسماع استفساراتك
+        واستقبال مقترحاتك، وذلك من خلال البريد الإلكتروني المخصص . تعتبر هذه القناة وسيلة سهلة وفعالة للتواصل معنا في أي
+        وقت تشاء.
+      </p>
+
+    </div>
+  </section>
+  <!-- end bg-cover -->
+
+  <!-- start Connect us -->
+  <section class="text-gray-600 body-font relative bg-[#f8fafc]">
+    <div class="container px-5 py-24 mx-auto">
+      <div class=" container mx-auto text-black  flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+
+        <h2 class="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl"> اتصل بنا الان</h2>
+
+        <p class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+          نقدم في هذا السكشن آراء حقيقية من المستخدمين حول منصة "ذكاء صغير". توفر هذه الآراء نظرة شاملة حول تأثير المنصة
+          على تطور وتعلم الأطفال، مما يساعد الآباء والمستخدمين الآخرين على فهم فعالية المنصة وقيمتها.
+        </p>
+
+      </div>
+      <form class="mt-4" action="https://fabform.io/f/{form-id}" method="post">
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600">الاسم الكامل</label>
+                <input type="text" id="name" name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:blue-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600">البريد الالكترونى</label>
+                <input type="email" id="email" name="email"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600">الرساله</label>
+                <textarea id="message" name="message"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button
+                class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">ارسال
+              </button>
+            </div>
+            <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+
+              <p class="leading-normal my-5">المحله الكبرى
+                <br>شارع البحر بجوار شركة ناس
+              </p>
+              <span class="inline-flex">
+                <a class="text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-4 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </form>
+  </section>
+  <!-- end Connect us -->
+
+  <!-- start footer -->
+  <footer class="p-4 bg-[#F8F9FA] md:p-8 lg:p-10 ">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="#" class=" flex justify-center items-center  ">
+        <img src="image/logo.png" class="h-20 w-48" alt="Advanced Language Center">
+
+      </a>
+      <p class="max-w-[85%] md:max-w-[60%] m-auto leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+        منصة "ذكاء صغير" يوفر روابط للموارد الإضافية ومعلومات الاتصال وسياسة الخصوصية، مما يسهل الوصول إلى المعلومات
+        الهامة للطلاب وأولياء الأمور. </p>
+      <ul class="flex justify-center items-center gap-4 p-4 md:p-0 mt-4 mb-5 font-medium">
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">الصفحة الرئسيه</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">من نحن</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">المنهج</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">اتصل بنا</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">التعلم بذكاء الصناعى</a>
+        </li>
+      </ul>
+
+      <span class="text-sm text-gray-500 sm:text-center mt-5 ">© 2023-2024 <a href="#" class="hover:underline">ذكاء
+          صغير</a>.
+        جميع الحقوق محفوظه</span>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <script>
+    document.getElementById("hamburger").onclick = function toggleMenu() {
+      console.log("dfs")
+      const navToggle = document.getElementsByClassName("toggle");
+      for (let i = 0; i < navToggle.length; i++) {
+        navToggle.item(i).classList.toggle("hidden");
+      }
+    };
+  </script>
+</body>
+
+</html>
