@@ -6,7 +6,3 @@ module.exports = {
   },
   plugins: [],
 };
-tailwind.config = {
-  theme: {},
-  plugins: [],
-};
