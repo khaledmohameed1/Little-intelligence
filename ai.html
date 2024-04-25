@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ذكاء صغير</title>
+  <!-- <link rel="stylesheet" href="src/output.css"> -->
+
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900;1000&family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      direction: rtl !important;
+      font-family: "Cairo", sans-serif !important;
+      /* font-family: "Jost", sans-serif; */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start navber  -->
+  <nav class="bg-white  fixed w-full z-50 top-0 start-0 border-b border-gray-200 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="image/logo.png" class="h-16 w-48" alt="Advanced Language Center">
+
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+        <button data-collapse-toggle="navbar-sticky" type="button" id="hamburger"
+          class="inline-flex  items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center toggle justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+          <li class="md:ml-8">
+            <a href="index.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  "
+              aria-current="page"> الرئسيه </a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">من
+              نحن</a>
+          </li>
+          <li>
+            <a href="courses.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">المنهج</a>
+          </li>
+          <li>
+            <a href="ai.html"
+              class=" block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 ">التعلم
+              بذكاء الصناعى</a>
+          </li>
+          <li>
+            <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0
+              ">اتصل
+              بنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navber -->
+
+  <section
+    class="relative mt-5 md:mt-0 overflow-hidden bg-gradient-to-b from-blue-50 via-transparent to-transparent pb-12 pt-20 sm:pb-16 sm:pt-32 lg:pb-24 xl:pb-32 xl:pt-40">
+    <div class="relative z-10">
+      <div
+        class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
+        <svg class="h-[60rem] w-[100rem] flex-none stroke-blue-600 opacity-20" aria-hidden="true">
+          <defs>
+            <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%"
+              patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
+              <path d="M.5 200V.5H200" fill="none"></path>
+            </pattern>
+          </defs>
+          <svg x="50%" y="50%" class="overflow-visible fill-blue-50">
+            <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0"></path>
+          </svg>
+          <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)">
+          </rect>
+        </svg>
+      </div>
+    </div>
+    <div class="relative z-20 mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          ابداء مع طفلك
+
+          <h1 id="typewriter" class="text-4xl mt-5 font-bold text-blue-600"></h1>
+        </h1>
+        <h2 class="mt-6 text-lg leading-8 text-gray-600">
+          عندما يلتقي العبقرية بالتكنولوجيا: إشراقة الذكاء الاصطناعي في عالم تعليم الأطفال.
+        </h2>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+
+          <a href="https://chat.openai.com/"
+            class="animate-bounce focus:animate-none hover:animate-none inline-flex text-2xl font-medium bg-blue-600  mt-3 px-4 py-2 rounded-lg tracking-wide text-white">
+            <span class="ml-2">ابداء التعلم 🤖</span>
+          </a>
+        </div>
+      </div>
+      <div class="relative mx-auto mt-10 max-w-lg">
+        <img class="w-full rounded-2xl border border-gray-100 shadow" src="image/robot.gif" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <div class="w-full h-full flex justify-center items-center">
+    <h1 id="typewriter" class="text-4xl font-bold"></h1>
+  </div>
+
+
+
+  <!-- start footer -->
+  <footer class="p-4 bg-[#F8F9FA] md:p-8 lg:p-10 ">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="#" class=" flex justify-center items-center  ">
+        <img src="image/logo.png" class="h-20 w-48" alt="Advanced Language Center">
+
+      </a>
+      <p class="max-w-[100%] md:max-w-[60%] m-auto leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+        منصة "ذكاء صغير" يوفر روابط للموارد الإضافية ومعلومات الاتصال وسياسة الخصوصية، مما يسهل الوصول إلى المعلومات
+        الهامة للطلاب وأولياء الأمور. </p>
+      <ul class="flex justify-center items-center gap-4 p-4 md:p-0 mt-4 mb-5 font-medium">
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">الصفحة الرئسيه</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">من نحن</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">المنهج</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">اتصل بنا</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">التعلم بذكاء الصناعى</a>
+        </li>
+      </ul>
+
+      <span class="text-sm text-gray-500 sm:text-center mt-5 ">© 2023-2024 <a href="#" class="hover:underline">ذكاء
+          صغير</a>.
+        جميع الحقوق محفوظه</span>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <script>
+    document.getElementById("hamburger").onclick = function toggleMenu() {
+      console.log("dfs")
+      const navToggle = document.getElementsByClassName("toggle");
+      for (let i = 0; i < navToggle.length; i++) {
+        navToggle.item(i).classList.toggle("hidden");
+      }
+    };
+    const words = [ "فى التعلم من", " الذكاء الصناعى" ];
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
+
+    function type() {
+      currentWord = words[ i ];
+      if (isDeleting) {
+        document.getElementById("typewriter").textContent = currentWord.substring(0, j - 1);
+        j--;
+        if (j == 0) {
+          isDeleting = false;
+          i++;
+          if (i == words.length) {
+            i = 0;
+          }
+        }
+      } else {
+        document.getElementById("typewriter").textContent = currentWord.substring(0, j + 1);
+        j++;
+        if (j == currentWord.length) {
+          isDeleting = true;
+        }
+      }
+      setTimeout(type, 100);
+    }
+
+    type();
+  </script>
+</body>
+
+</html>
