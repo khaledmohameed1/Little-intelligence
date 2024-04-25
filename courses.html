@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ذكاء صغير</title>
+  <!-- <link rel="stylesheet" href="src/output.css"> -->
+
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900;1000&family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      direction: rtl !important;
+      font-family: "Cairo", sans-serif !important;
+      /* font-family: "Jost", sans-serif; */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start navber  -->
+  <nav class="bg-white  fixed w-full z-50 top-0 start-0 border-b border-gray-200 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="image/logo.png" class="h-16 w-48" alt="Advanced Language Center">
+
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+        <button data-collapse-toggle="navbar-sticky" type="button" id="hamburger"
+          class="inline-flex  items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center toggle justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+          <li class="md:ml-8">
+            <a href="index.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  "
+              aria-current="page"> الرئسيه </a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">من
+              نحن</a>
+          </li>
+          <li>
+            <a href="courses.html"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0  ">المنهج</a>
+          </li>
+          <li>
+            <a href="ai.html" class=" 
+              block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0
+              ">التعلم
+              بذكاء الصناعى</a>
+          </li>
+          <li>
+            <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0
+              ">اتصل
+              بنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navber -->
+
+  <!-- start navber  -->
+  <nav class="bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="image/logo.png" class="h-16 w-48" alt="Advanced Language Center">
+
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+        <button data-collapse-toggle="navbar-sticky" type="button" id="hamburger"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center toggle justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
+          <li class="md:ml-8">
+            <a href="index.html" class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0
+              " aria-current="page"> الرئسيه </a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0  ">من
+              نحن</a>
+          </li>
+          <li>
+            <a href="courses.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">المنهج</a>
+          </li>
+          <li>
+            <a href="ai.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">التعلم
+              بذكاء الصناعى</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">اتصل
+              بنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navber -->
+
+  <!-- start bg-cover -->
+  <section style="background-image: url('image/bg-cover.png')" class=" bg-center h-[80vh] bg-no-repeat bg-gray-700
+    bg-blend-multiply">
+    <div class="relative top-[50%] -translate-y-2/4  m-0   text-center lg:py-56">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">المنهج
+      </h1>
+      <p class="mb-8 text-lg md:w-[70%] px-5 mx-auto font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+
+        منهج منصة ذكاء صغير يركز على توفير تجارب تعلم شاملة وممتعة للأطفال في مراحل مختلفة من التطور العقلي والعمري.
+        يعتمد المنهج على مبادئ علم النفس والتعليم الحديثة لضمان تحفيز الفضول وتنمية المهارات الحياتية والتفكير الابتكاري
+        لدى الأطفال.
+      </p>
+
+    </div>
+  </section>
+  <!-- end bg-cover -->
+
+
+
+  <!-- box -->
+  <div class=" container mx-auto mt-7  pt-10 flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+
+    <h2 class="font-bold text-3xl  mb-7 leading-[1.1] sm:text-3xl md:text-6xl">المنهج والكورسات المنصه</h2>
+
+  </div>
+  <div
+    class="px-5 grid  mb-7 justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3 lg:max-w-[80rem] lg:grid-cols-4  mt-8  container mx-auto">
+
+    <div class="  overflow-hidden bg-white rounded-lg shadow-md">
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="image/one.png" alt="Image">
+        <div class="absolute top-0 right-0">
+
+        </div>
+      </div>
+      <div class="relative">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">لغة عربيه</h3>
+          <p class="text-gray-700 text-base">مادة لغة عربية ممتع وتفاعلي لتلاميذ الصف الأول الابتدائي، يهدف لتعزيز
+            مهارات القراءة والكتابة بطريقة بسيطة
+            وملهمة.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class=" bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <a href="https://www.youtube.com/watch?v=Jz7wUSbUJC8&list=PL3jaAblAPiYoBv217h-LG3UsJq8ah79ax">ابداء التعلم
+            الان</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="  overflow-hidden bg-white rounded-lg shadow-md">
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="image/eg.png" alt="Image">
+        <div class="absolute top-0 right-0">
+
+        </div>
+      </div>
+      <div class="relative">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">لغة الانجليزيه</h3>
+          <p class="text-gray-700 text-base">مادة لغة عربية ممتع وتفاعلي لتلاميذ الصف الأول الابتدائي، يهدف لتعزيز
+            مهارات القراءة والكتابة بطريقة بسيطة
+            وملهمة.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class=" bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <a href="https://www.youtube.com/playlist?list=PLQFcNT99K4XnkzdVl32HsaReEdsf07zBG">ابداء التعلم الان</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="  overflow-hidden bg-white rounded-lg shadow-md">
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="image/art.png" alt="Image">
+        <div class="absolute top-0 right-0">
+
+        </div>
+      </div>
+      <div class="relative">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2"> تعلم الرسم</h3>
+          <p class="text-gray-700 text-base">مادة لغة عربية ممتع وتفاعلي لتلاميذ الصف الأول الابتدائي، يهدف لتعزيز
+            مهارات القراءة والكتابة بطريقة بسيطة
+            وملهمة.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class=" bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <a href="https://www.youtube.com/watch?v=dI6DhBsUZ08&list=PLqn9s8FKPXe3P6E_4ttjxE7kp0B7EHNwp">ابداء التعلم
+            الان</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="  overflow-hidden bg-white rounded-lg shadow-md">
+      <div class="relative">
+        <img class="w-full h-64 object-cover" src="image/den.png" alt="Image">
+        <div class="absolute top-0 right-0">
+
+        </div>
+      </div>
+      <div class="relative">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold mb-2">دين أول ابتدائي </h3>
+          <p class="text-gray-700 text-base">مادة لغة عربية ممتع وتفاعلي لتلاميذ الصف الأول الابتدائي، يهدف لتعزيز
+            مهارات القراءة والكتابة بطريقة بسيطة
+            وملهمة.
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class=" bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <a href="https://www.youtube.com/playlist?list=PL72rCS-zMk3pU2n4BXK0yQjN1_1C_KNXD">ابداء التعلم الان</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- box -->
+
+
+  <!-- start footer -->
+  <footer class="p-4 bg-[#F8F9FA] md:p-8 lg:p-10 ">
+    <div class="mx-auto max-w-screen-xl text-center">
+      <a href="#" class=" flex justify-center items-center  ">
+        <img src="image/logo.png" class="h-20 w-48" alt="Advanced Language Center">
+
+      </a>
+      <p class="max-w-[100%] md:max-w-[60%] m-auto leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+        منصة "ذكاء صغير" يوفر روابط للموارد الإضافية ومعلومات الاتصال وسياسة الخصوصية، مما يسهل الوصول إلى المعلومات
+        الهامة للطلاب وأولياء الأمور. </p>
+      <ul class="flex justify-center items-center gap-4 p-4 md:p-0 mt-4 mb-5 font-medium">
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">الصفحة الرئسيه</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">من نحن</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">المنهج</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">اتصل بنا</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3  hover:text-blue-700 md:p-0 " aria-current="page">التعلم بذكاء الصناعى</a>
+        </li>
+      </ul>
+
+      <span class="text-sm text-gray-500 sm:text-center mt-5 ">© 2023-2024 <a href="#" class="hover:underline">ذكاء
+          صغير</a>.
+        جميع الحقوق محفوظه</span>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <script>
+    document.getElementById("hamburger").onclick = function toggleMenu() {
+      console.log("dfs")
+      const navToggle = document.getElementsByClassName("toggle");
+      for (let i = 0; i < navToggle.length; i++) {
+        navToggle.item(i).classList.toggle("hidden");
+      }
+    };
+    const words = [ "فى التعلم من", " الذكاء الصناعى" ];
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
+
+    function type() {
+      currentWord = words[ i ];
+      if (isDeleting) {
+        document.getElementById("typewriter").textContent = currentWord.substring(0, j - 1);
+        j--;
+        if (j == 0) {
+          isDeleting = false;
+          i++;
+          if (i == words.length) {
+            i = 0;
+          }
+        }
+      } else {
+        document.getElementById("typewriter").textContent = currentWord.substring(0, j + 1);
+        j++;
+        if (j == currentWord.length) {
+          isDeleting = true;
+        }
+      }
+      setTimeout(type, 100);
+    }
+
+    type();
+  </script>
+</body>
+
+</html>
